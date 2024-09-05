@@ -26,16 +26,16 @@
             <div class="container">
                 <ul>
                     <li>
-                        <a href="#">Sobre</a>
+                        <a href="#sobre-a-loja">Sobre</a>
                     </li>
                     <li>
-                        <a href="#">Em destaque</a>
+                        <a href="#lista-de-veiculos">Em destaque</a>
                     </li>
                     <li>
-                        <a href="#">Promoções</a>
+                        <a href="#promocao">Promoções</a>
                     </li>
                     <li>
-                        <a href="#">Contato</a>
+                        <a href="#contato">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -60,7 +60,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="lista-de-veiculos">
         <div class="container">
             <h2>Em destaque</h2>
             <ul class="container-flex lista-veiculos">
@@ -112,21 +112,7 @@
             </ul>
         </div>
     </section>
-    <section id="sobre-a-loja">
-        <div class="container container-flex">
-            <img src="images/loja.jpg" alt="Imagem loja EBAC Motors">
-            <div>
-                <h2>Sobre a EBAC Motors</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, debitis ipsum nulla commodi repudiandae ullam totam. Quod eaque cumque delectus nostrum, ipsam tempora vel aliquam odit. Animi corrupti eaque nulla?
-                </p>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex dolores consequatur possimus modi quia fugit velit quisquam consequuntur inventore dicta animi assumenda quis molestiae accusantium repellat, provident nostrum, vitae consectetur.
-                </p>
-            </div>
-        </div>
-    </section>
-    <section>
+    <section id="promocao">
         <div class="container">
             <h2>Promoções</h2>
             <ul class="container-flex lista-veiculos">
@@ -192,6 +178,54 @@
                 </li>
             </ul>
         </div>
+    </section>
+    <section id="contato">
+        <div class="container">
+            <h2>Entre em contato</h2>
+            <form>
+                <div class="form-campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome">
+                </div>
+                <div class="form-campo">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone">
+                </div>
+                <div class="form-campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="form-campo">
+                    <label for="veiculo-interesse">Veículo de interesse:</label>
+                    <input type="text" id="veiculo-interesse">
+                </div>
+                <div class="form-campo">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea name="mensagem" style="resize: none;"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <footer>
+            <div class="container container-flex">
+                <p>
+                2022 &copy; EBAC Motors - Todos os direitos reservados
+                </p>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./icons/facebook.png" alt="Facebook">
+                        </a>
+                        <a href="#">
+                            <img src="./icons/instagram.png" alt="Instagram">
+                        </a>
+                        <a href="#">
+                            <img src="./icons/youtube.png" alt="Youtube">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
     </section>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
