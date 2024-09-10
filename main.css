@@ -29,7 +29,7 @@ header {
 }
 
 header > .container,
-header > .container{
+footer > .container{
     justify-content: space-between;
     align-items: center;
     padding-bottom: 16px;
@@ -93,6 +93,7 @@ section h2 {
     list-style: none;
     max-width: 30%;
     margin-bottom: 24px;
+    margin-right: 16px;
 }
 
 .lista-veiculos li img {
@@ -121,7 +122,7 @@ button {
     border-radius: 6px;
 }
 
-.price{
+.price {
     margin: 16px 0;
     display: block;
 }
@@ -144,6 +145,7 @@ button {
 
 .form-campo textarea {
     height: 120px;
+    resize: none;
 }
 
 form {
@@ -154,17 +156,19 @@ form button {
     max-width: 120px;
 }
 
+footer {
+    margin-top: 24px;
+}
+
 footer li {
     list-style: none;
     margin-left: 16px;
-
 }
 
 footer li img {
     height: 32px;
 }
 
-footer .container {
-    justify-content: space-between;
-
+#contato {
+    padding-bottom: 0;
 }
