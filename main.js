@@ -11,7 +11,7 @@ $(document).ready(function() {
     $('#telefone').mask('(00) 00000-0000');
 
     $('form').validate({
-        rule: {
+        rules: {
             nome: {
                 required: true
             },
@@ -21,10 +21,25 @@ $(document).ready(function() {
             },
             telefone: {
                 required: true
+            },
+            mensagem: {
+                required: true,
+            },
+            veiculosDeInteresse: {
+                required: false,
             }
         },
         messages: {
             nome: 'Por Favor, Insira seu nome'
+        },
+        submitHandler: function(form) {
+            console.log(form)
+        },
+        invalidHandler: function(evento, validador){
+            let camposIncorretos = validador.numberOfInvalids();
+            if (camposIncorretos) {
+                alert(`Existem ${camposIncorretos} campos incorretis`)
+            }
         }
     })
 });
