@@ -22,10 +22,11 @@ header, footer {
 }
 
 header {
-    position: sticky;
+    position: sticky; /*mantém o elemento preso enquanto a pagina é rola, 
+    e soltou enquanto está na visão do usuário*/
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 1; /*COntrola as ordens dos fatores*/
 }
 
 header > .container,

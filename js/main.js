@@ -5,7 +5,7 @@ $(document).ready(function() {
 
 
     $('.menu-hamburguer').click(function() {
-        $('nav').slideToggle();
+        $('nav').slideToggle(); // 'nav' é um html e pode ser chamado pelo JS
     })
 
     $('#telefone').mask('(00) 00000-0000');
